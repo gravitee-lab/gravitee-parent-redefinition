@@ -10,7 +10,7 @@
     <name>Gravitee.IO Parent POM</name>
     
     <description>The Gravitee.IO Parent POM provides common settings for all Gravitee components.</description>
-    <url>https://bitbucket.org/openesb/openesb-parent</url>
+    <url>https://github.com/gravitee-io</url>
     <inceptionYear>2015</inceptionYear>
     
     <parent>
@@ -92,7 +92,7 @@
     
     <profiles>
         <profile>
-            <id>openesb-release</id>
+            <id>gravitee-release</id>
             <activation>
                 <property>
                     <name>performRelease</name>
