@@ -48,6 +48,21 @@
         <url>http://gravitee.io</url>
     </organization>
     
+    <developers>
+        <developer>
+            <email>azize.elamrani@gmail.com</email>
+            <name>Azize Elamrani</name>
+            <url>https://github.com/aelamrani</url>
+            <id>aelamrani</id>
+        </developer>
+        <developer>
+            <email>brasseld@gmail.com</email>
+            <name>David BRASSELY</name>
+            <url>https://github.com/brasseld</url>
+            <id>brasseld</id>
+        </developer>
+    </developers>
+        
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
