@@ -124,6 +124,8 @@
                         <exclude>dist/**</exclude>
                         <exclude>typings/**</exclude>
                         <exclude>fonts/**</exclude>
+                        <exclude>.tmp/**</exclude>
+                        <exclude>bower_components/**</exclude>
                     </excludes>
                 </configuration>
                 <executions>
