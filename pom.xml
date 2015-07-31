@@ -122,8 +122,6 @@
                         <exclude>src/main/resources/**</exclude>
                         <exclude>node_modules/**</exclude>
                         <exclude>dist/**</exclude>
-                        <exclude>typings/**</exclude>
-                        <exclude>fonts/**</exclude>
                         <exclude>.tmp/**</exclude>
                         <exclude>bower_components/**</exclude>
                     </excludes>
@@ -133,6 +131,7 @@
                         <goals>
                             <goal>check</goal>
                         </goals>
+                        <phase>validate</phase>
                     </execution>
                 </executions>
             </plugin>
