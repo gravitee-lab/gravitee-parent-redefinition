@@ -135,6 +135,7 @@
                     <excludes>
                         <exclude>LICENSE.txt</exclude>
                         <exclude>**/README</exclude>
+                        <exclude>src/main/packaging/**</exclude>
                         <exclude>src/test/resources/**</exclude>
                         <exclude>src/main/resources/**</exclude>
                         <exclude>node_modules/**</exclude>
