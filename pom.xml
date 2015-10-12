@@ -18,24 +18,24 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <groupId>io.gravitee</groupId>
     <artifactId>gravitee-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    
+
     <name>Gravitee.IO Parent POM</name>
-    
+
     <description>The Gravitee.IO Parent POM provides common settings for all Gravitee components.</description>
     <url>https://github.com/gravitee-io</url>
     <inceptionYear>2015</inceptionYear>
-    
+
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
         <version>9</version>
     </parent>
-    
+
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -43,32 +43,32 @@
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
-    
+
     <issueManagement>
         <system>GitHub Issues</system>
         <url>https://github.com/gravitee-io/</url>
     </issueManagement>
-    
+
     <scm>
         <url>https://github.com/gravitee-io/parent</url>
         <connection>scm:git:git://github.com/gravitee-io/parent.git</connection>
         <developerConnection>scm:git:git@github.com:gravitee-io/parent.git</developerConnection>
     </scm>
-    
+
     <ciManagement>
         <system>Jenkins</system>
         <url>http://build.gravitee.io/jenkins/</url>
     </ciManagement>
-    
+
     <organization>
         <name>Gravitee.IO</name>
         <url>http://gravitee.io</url>
     </organization>
-    
+
     <developers>
         <developer>
             <email>azize.elamrani@gmail.com</email>
-            <name>Azize Elamrani</name>
+            <name>Azize ELAMRANI</name>
             <url>https://github.com/aelamrani</url>
             <id>aelamrani</id>
         </developer>
@@ -78,8 +78,32 @@
             <url>https://github.com/brasseld</url>
             <id>brasseld</id>
         </developer>
+        <developer>
+            <email>loic.dassonville@gmail.com</email>
+            <name>Loïc DASSONVILLE</name>
+            <url>https://github.com/ldassonville<url>
+            <id>ldassonville</id>
+        </developer>
+        <developer>
+            <email>nicolas.geraud@gmail.com</email>
+            <name>Nicolas GERAUD</name>
+            <url>https://github.com/NicolasGeraud<url>
+            <id>NicolasGeraud</id>
+        </developer>
+        <developer>
+            <email>aurelien.bourdon@gmail.com</email>
+            <name>Aurélien BOURDON</name>
+            <url>https://github.com/abourdon<url>
+            <id>abourdon</id>
+        </developer>
+        <developer>
+            <email>titouan.compiegne@gmail.com</email>
+            <name>Titouan COMPIEGNE</name>
+            <url>https://github.com/tcompiegne<url>
+            <id>tcompiegne</id>
+        </developer>
     </developers>
-        
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.12</slf4j.version>
@@ -160,7 +184,7 @@
             </plugin>
         </plugins>
     </build>
-    
+
     <profiles>
         <profile>
             <id>gravitee-release</id>
@@ -199,7 +223,7 @@
                             </execution>
                         </executions>
                     </plugin>
-                    
+
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
@@ -213,7 +237,7 @@
                             </execution>
                         </executions>
                     </plugin>
-            
+
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
