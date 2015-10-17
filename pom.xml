@@ -21,7 +21,7 @@
 
     <groupId>io.gravitee</groupId>
     <artifactId>gravitee-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Gravitee.IO Parent POM</name>
@@ -29,12 +29,6 @@
     <description>The Gravitee.IO Parent POM provides common settings for all Gravitee components.</description>
     <url>https://github.com/gravitee-io</url>
     <inceptionYear>2015</inceptionYear>
-
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>9</version>
-    </parent>
 
     <licenses>
         <license>
@@ -59,6 +53,17 @@
         <system>Jenkins</system>
         <url>http://build.gravitee.io/jenkins/</url>
     </ciManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <organization>
         <name>Gravitee.IO</name>
@@ -171,6 +176,8 @@
                         <exclude>dist/**</exclude>
                         <exclude>.tmp/**</exclude>
                         <exclude>bower_components/**</exclude>
+                        <exclude>.*</exclude>
+                        <exclude>.*/**</exclude>
                     </excludes>
                 </configuration>
                 <executions>
@@ -197,18 +204,16 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-release-plugin</artifactId>
-                        <version>2.5.2</version>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>1.6.6</version>
+                        <extensions>true</extensions>
                         <configuration>
-                            <useReleaseProfile>false</useReleaseProfile>
-                            <releaseProfiles>release</releaseProfiles>
-                            <goals>deploy</goals>
-                            <autoVersionSubmodules>true</autoVersionSubmodules>
-                            <arguments>-DskipTests</arguments>
+                            <serverId>ossrh</serverId>
+                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
-
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
