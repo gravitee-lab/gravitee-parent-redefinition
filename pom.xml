@@ -213,6 +213,29 @@
             <build>
                 <plugins>
                     <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-enforcer-plugin</artifactId>
+                        <version>1.4.1</version>
+                        <executions>
+                            <execution>
+                                <id>enforce-no-snapshots</id>
+                                <goals>
+                                    <goal>enforce</goal>
+                                </goals>
+                                <configuration>
+                                    <rules>
+                                        <requireReleaseDeps>
+                                            <message>No Snapshots Allowed!</message>
+                                        </requireReleaseDeps>
+                                        <requireReleaseVersion>
+                                            <message>No Snapshots Allowed!</message>
+                                        </requireReleaseVersion>
+                                    </rules>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
                         <version>1.6.6</version>
