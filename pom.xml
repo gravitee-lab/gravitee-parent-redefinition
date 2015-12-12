@@ -84,22 +84,10 @@
             <id>brasseld</id>
         </developer>
         <developer>
-            <email>loic.dassonville@gmail.com</email>
-            <name>Loïc DASSONVILLE</name>
-            <url>https://github.com/ldassonville</url>
-            <id>ldassonville</id>
-        </developer>
-        <developer>
             <email>nicolas.geraud@gmail.com</email>
             <name>Nicolas GERAUD</name>
             <url>https://github.com/NicolasGeraud</url>
             <id>NicolasGeraud</id>
-        </developer>
-        <developer>
-            <email>aurelien.bourdon@gmail.com</email>
-            <name>Aurélien BOURDON</name>
-            <url>https://github.com/abourdon</url>
-            <id>abourdon</id>
         </developer>
         <developer>
             <email>titouan.compiegne@gmail.com</email>
