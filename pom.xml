@@ -51,7 +51,7 @@
 
     <ciManagement>
         <system>Jenkins</system>
-        <url>http://build.gravitee.io/jenkins/</url>
+        <url>https://ci.gravitee.io</url>
     </ciManagement>
 
     <distributionManagement>
@@ -67,30 +67,30 @@
 
     <organization>
         <name>Gravitee.IO</name>
-        <url>http://gravitee.io</url>
+        <url>https://gravitee.io</url>
     </organization>
 
     <developers>
         <developer>
-            <email>azize.elamrani@gmail.com</email>
+            <email>azize@gravitee.io</email>
             <name>Azize ELAMRANI</name>
             <url>https://github.com/aelamrani</url>
             <id>aelamrani</id>
         </developer>
         <developer>
-            <email>brasseld@gmail.com</email>
+            <email>david@gravitee.io</email>
             <name>David BRASSELY</name>
             <url>https://github.com/brasseld</url>
             <id>brasseld</id>
         </developer>
         <developer>
-            <email>nicolas.geraud@gmail.com</email>
+            <email>nicolas@gravitee.io</email>
             <name>Nicolas GERAUD</name>
             <url>https://github.com/NicolasGeraud</url>
             <id>NicolasGeraud</id>
         </developer>
         <developer>
-            <email>titouan.compiegne@gmail.com</email>
+            <email>titouan@gravitee.io</email>
             <name>Titouan COMPIEGNE</name>
             <url>https://github.com/tcompiegne</url>
             <id>tcompiegne</id>
@@ -99,10 +99,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <slf4j.version>1.7.12</slf4j.version>
-        <spring.version>4.1.6.RELEASE</spring.version>
+        <slf4j.version>1.7.21</slf4j.version>
+        <spring.version>4.2.6.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
-        <logback.version>1.1.3</logback.version>
+        <logback.version>1.1.7</logback.version>
         <mockito.version>1.10.19</mockito.version>
     </properties>
 
