@@ -72,25 +72,25 @@
 
     <developers>
         <developer>
-            <email>azize@gravitee.io</email>
+            <email>azize@graviteesource.com</email>
             <name>Azize ELAMRANI</name>
             <url>https://github.com/aelamrani</url>
             <id>aelamrani</id>
         </developer>
         <developer>
-            <email>david@gravitee.io</email>
+            <email>david@graviteesource.com</email>
             <name>David BRASSELY</name>
             <url>https://github.com/brasseld</url>
             <id>brasseld</id>
         </developer>
         <developer>
-            <email>nicolas@gravitee.io</email>
+            <email>nicolas@graviteesource.com</email>
             <name>Nicolas GERAUD</name>
             <url>https://github.com/NicolasGeraud</url>
             <id>NicolasGeraud</id>
         </developer>
         <developer>
-            <email>titouan@gravitee.io</email>
+            <email>titouan@graviteesource.com</email>
             <name>Titouan COMPIEGNE</name>
             <url>https://github.com/tcompiegne</url>
             <id>tcompiegne</id>
@@ -100,10 +100,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.21</slf4j.version>
-        <spring.version>4.2.6.RELEASE</spring.version>
+        <spring.version>4.3.3.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
         <logback.version>1.1.7</logback.version>
         <mockito.version>1.10.19</mockito.version>
+        <jackson.version>2.8.4</jackson.version>
     </properties>
 
     <build>
