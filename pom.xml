@@ -21,7 +21,7 @@
 
     <groupId>io.gravitee</groupId>
     <artifactId>gravitee-parent</artifactId>
-    <version>12-SNAPSHOT</version>
+    <version>12</version>
     <packaging>pom</packaging>
 
     <name>Gravitee.io APIM - Parent POM</name>
