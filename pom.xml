@@ -243,6 +243,7 @@
                     </properties>
                     <excludes>
                         <exclude>LICENSE.txt</exclude>
+                        <exclude>Jenkinsfile</exclude>
                         <exclude>**/README</exclude>
                         <exclude>src/main/packaging/**</exclude>
                         <exclude>src/test/resources/**</exclude>
@@ -254,6 +255,7 @@
                         <exclude>bower_components/**</exclude>
                         <exclude>.*</exclude>
                         <exclude>.*/**</exclude>
+                        <exclude>**/*.adoc</exclude>
                     </excludes>
                 </configuration>
                 <executions>
