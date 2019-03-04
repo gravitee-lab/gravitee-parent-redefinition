@@ -99,16 +99,16 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <slf4j.version>1.7.25</slf4j.version>
-        <spring.version>5.0.10.RELEASE</spring.version>
+        <slf4j.version>1.7.26</slf4j.version>
+        <spring.version>5.1.5.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
-	    <vertx.version>3.5.4</vertx.version>
-        <netty.version>4.1.19.Final</netty.version>
-        <logback.version>1.1.11</logback.version>
-        <mockito.version>1.10.19</mockito.version>
-        <jackson.version>2.9.7</jackson.version>
+	    <vertx.version>3.6.3</vertx.version>
+        <netty.version>4.1.30.Final</netty.version>
+        <logback.version>1.2.3</logback.version>
+        <mockito.version>2.24.5</mockito.version>
+        <jackson.version>2.9.8</jackson.version>
         <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
-        <assertj-core.versio>3.5.1</assertj-core.versio>
+        <assertj-core.version>3.12.1</assertj-core.version>
     </properties>
 
     <dependencyManagement>
@@ -161,7 +161,7 @@
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
-                <artifactId>mockito-all</artifactId>
+                <artifactId>mockito-core</artifactId>
                 <version>${mockito.version}</version>
                 <scope>test</scope>
             </dependency>
