@@ -104,6 +104,8 @@
         <junit.version>4.12</junit.version>
         <vertx.version>3.7.1</vertx.version>
         <netty.version>4.1.34.Final</netty.version>
+        <jetty.version>9.4.26.v20200117</jetty.version>
+        <jersey.version>2.30</jersey.version>
         <logback.version>1.2.3</logback.version>
         <mockito.version>2.24.5</mockito.version>
         <jackson.version>2.9.8</jackson.version>
@@ -113,17 +115,45 @@
 
     <dependencyManagement>
         <dependencies>
+
             <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson.version}</version>
-                <scope>provided</scope>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-bom</artifactId>
+                <version>${jetty.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
+
             <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-annotations</artifactId>
+                <groupId>org.glassfish.jersey</groupId>
+                <artifactId>jersey-bom</artifactId>
+                <version>${jersey.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-dependencies</artifactId>
+                <version>${vertx.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
                 <version>${jackson.version}</version>
-                <scope>provided</scope>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <dependency>
