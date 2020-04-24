@@ -21,7 +21,7 @@
 
     <groupId>io.gravitee</groupId>
     <artifactId>gravitee-parent</artifactId>
-    <version>17</version>
+    <version>17.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Gravitee.io APIM - Parent POM</name>
@@ -319,6 +319,12 @@
                                 <goals>
                                     <goal>sign</goal>
                                 </goals>
+                                <configuration>
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
