@@ -100,16 +100,16 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.26</slf4j.version>
-        <spring.version>5.1.5.RELEASE</spring.version>
+        <spring.version>5.2.6.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
         <vertx.version>3.8.5</vertx.version>
-        <netty.version>4.1.42.Final</netty.version>
-        <jetty.version>9.4.26.v20200117</jetty.version>
-        <jersey.version>2.30</jersey.version>
+        <netty.version>4.1.49.Final</netty.version>
+        <jetty.version>9.4.28.v20200408</jetty.version>
+        <jersey.version>2.30.1</jersey.version>
         <logback.version>1.2.3</logback.version>
         <mockito.version>2.24.5</mockito.version>
-        <jackson.version>2.9.10</jackson.version>
-        <rxjava.version>2.2.17</rxjava.version>
+        <jackson.version>2.10.3</jackson.version>
+        <rxjava.version>2.2.19</rxjava.version>
         <reactive-streams.version>1.0.3</reactive-streams.version>
         <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
         <assertj-core.version>3.12.1</assertj-core.version>
@@ -117,7 +117,6 @@
 
     <dependencyManagement>
         <dependencies>
-
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-bom</artifactId>
@@ -135,6 +134,22 @@
             </dependency>
 
             <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-bom</artifactId>
+                <version>${netty.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>${jackson.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-dependencies</artifactId>
                 <version>${vertx.version}</version>
@@ -146,14 +161,6 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-framework-bom</artifactId>
                 <version>${spring.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>com.fasterxml.jackson</groupId>
-                <artifactId>jackson-bom</artifactId>
-                <version>${jackson.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
