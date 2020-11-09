@@ -395,6 +395,18 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>
-
+        <profile>
+            <id>gravitee-dry-run-release</id>
+            <distributionManagement>
+              <snapshotRepository>
+                <id>clever-cloud-artifactory</id>
+                <url>http://odbxikk7vo-artifactory.services.clever-cloud.com/dry-run-snapshots/</url>
+              </snapshotRepository>
+              <repository>
+                <id>clever-cloud-artifactory</id>
+                <url>http://odbxikk7vo-artifactory.services.clever-cloud.com/dry-run-releases/</url>
+              </repository>
+            </distributionManagement>
+        </profile>
+</profiles>
 </project>
