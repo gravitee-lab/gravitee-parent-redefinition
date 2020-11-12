@@ -423,6 +423,16 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <plugin>
+                  		<groupId>org.apache.maven.plugins</groupId>
+                  		<artifactId>maven-deploy-plugin</artifactId>
+                  		<inherited>false</inherited>
+                  		<configuration>
+                  			<altDeploymentRepository>
+                  				clever-cloud-artifactory-snapshots::default::https://nexus.example.com/content/repositories/releases/
+                  			</altDeploymentRepository>
+                  		</configuration>
+                  	</plugin>
                 </plugins>
             </build>
         </profile>
