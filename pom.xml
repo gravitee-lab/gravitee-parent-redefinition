@@ -391,6 +391,10 @@
                     <name>performRelease</name>
                     <value>true</value>
                 </property>
+                <property>
+                  <name>altDeploymentRepository</name>
+                  <value>clever-cloud-artifactory-snapshots::default::http://odbxikk7vo-artifactory.services.clever-cloud.com/dry-run-releases/</value>
+                </property>
             </activation>
             <build>
                 <plugins>
