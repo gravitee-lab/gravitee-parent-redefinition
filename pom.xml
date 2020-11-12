@@ -429,7 +429,7 @@
                   		<inherited>false</inherited>
                   		<configuration>
                   			<altDeploymentRepository>
-                  				clever-cloud-artifactory-snapshots::default::https://nexus.example.com/content/repositories/releases/
+                  				clever-cloud-artifactory-snapshots::default::http://odbxikk7vo-artifactory.services.clever-cloud.com/dry-run-releases/
                   			</altDeploymentRepository>
                   		</configuration>
                   	</plugin>
