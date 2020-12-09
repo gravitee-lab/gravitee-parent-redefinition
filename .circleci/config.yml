@@ -85,8 +85,8 @@ workflows:
       # - empty_job:
           # context: cicd-orchestrator
   maven_deploy:
-    when:
-      equal: [ release, << pipeline.parameters.gio_action >> ]
+    # when:
+      # equal: [ release, << pipeline.parameters.gio_action >> ]
     jobs:
       - redefine_gravitee_parent:
           context: cicd-orchestrator
