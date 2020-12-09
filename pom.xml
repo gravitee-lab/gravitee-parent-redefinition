@@ -378,7 +378,7 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <!-- no more nexus staging here -->
+                    <!-- no more nexus staging mvn plugin here -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
